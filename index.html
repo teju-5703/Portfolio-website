@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.js">
+  </head>
+  <body>
+    <!-------------------------------header---------------------------------------->
+    <nav>
+      <div class="logo">TEJASWINI</div>
+      <ul id="sidemenu">
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" id="fas" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" id="fas" onclick="openmenu()"></i>
+    </nav>
+
+    <div id="header">
+      <div class="bgimg">
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Tejaswini</span><br />Doddavula from India</h1>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------about----------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/about img.jpg" alt="About img" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              reprehenderit est cupiditate, quo reiciendis id expedita deleniti
+              molestiae, perspiciatis blanditiis ipsa animi eveniet. Voluptates
+              architecto alias vel
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>              
+              <p class="tab-links" onclick="opentab('project')">Project</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skill">
+              <ul>
+                <li><span>Front end Developer</span><br />web Developement</li>
+                <li><span>HTML</span><br />Web Developement</li>
+                <li><span>CSS</span><br />Web Developement</li>
+                <li><span>SQL</span><br />SQL Developement</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="project">
+              <ul>
+                <li>
+                  <span>Calculator</span><br/>created a calculator Using
+                  HTML,CSS and JAVASCRIPT
+                </li>
+                <li>
+                  <span>Login forms</span><br />Created different types of login
+                  forms using HTML and CSS
+                </li>
+                <li>
+                  <span>porfolio website</span><br />Created a portfolio website
+                  using HTML,CSS and JAVASCRIPT
+                </li>
+                <li>
+                  <span>Cards</span><br />Created different types of cards using
+                  HTML and CSS
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019-2022</span><br />Master of Computer Applications
+                </li>
+                <li><span>2016-2019</span><br />Bsc Computer Science</li>
+                <li><span>2014-2016</span><br />Intermediate</li>
+                <li><span>2014</span><br />SSC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------------skills-------------------------------->
+    <div id="skills">
+      <div class="container">
+        <h1 class="subtitle">Skills</h1>
+        <div class="skills-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>HTML</h2>
+            <p>
+              HTML, I am adept at creating clean and well-structured web pages. I have hands-on experience with HTML5 elements 
+              and can build responsive layouts that adapt to various screen sizes. Familiar with integrating basic multimedia elements and forms.
+            </p>
+            <a href="">learn more...</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+            <p>
+              CSS, I am skilled in styling and formatting web pages to enhance visual appeal and 
+              usability. I have experience with CSS3 features, including responsive design, flexbox, 
+              and grid layout. Familiar with creating stylesheets that ensure consistent design across 
+              different devices and browsers.
+            </p>
+            <a href="">Learn more...</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JAVASCRIPT</h2>
+            <p>
+              I have experience with core JavaScript concepts such as variables, functions, 
+              and events. Familiar with manipulating the DOM and using JavaScript to handle 
+              user input and dynamic content.
+            </p>
+            <a href="">Learn more...</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>SQL</h2>
+            <p>
+              SQL, I am skilled in writing queries to retrieve and manipulate data from relational databases. 
+              I am familiar with core SQL concepts such as SELECT, INSERT, UPDATE, and DELETE commands. Experienced 
+              in working with database tables, relationships, and simple joins.
+            </p>
+            <a href="">Learn more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------projects---------------->
+    <div id="projects">
+      <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work1.jpg" alt="calculator" />
+            <div class="layer">
+              <h3>Calculator</h3>
+              <p>
+                Using HTML, CSS and JAVASCRIPT, by usig this we can perform
+                maths calculations
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work2.png" alt="Login form" />
+            <div class="layer">
+              <h3>Login Forms</h3>
+              <p>
+                using HTML and CSS, practiced different different types of forms
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/work3.jpg" alt="portfolio" />
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>
+                By using HTML,CSS and JAVASCRIPT I created my Responsive
+                portfolio website
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!--------------------------contact----------------------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-info-left">
+            <h1 class="subtitle">Contact Me</h1>
+
+            <p><i class="fa-regular fa-envelope"></i>doddavulatejaswini@gmail.com</p>
+
+            <p><i class="fa-solid fa-phone"></i>1123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="" class="btn btn2" >Download CV</a>
+          </div>
+          <div class="contact-info-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="your name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>
+          copyright &#169; made with <i class="fa-solid fa-heart"></i> by
+          Tejaswini
+        </p>
+      </div>
+    </div>
+</body>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</html>
